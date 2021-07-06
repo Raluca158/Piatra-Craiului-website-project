@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>National Park Piatra Craiului</title>
+    <style>
+      body {
+        background: linear-gradient(
+          180.5deg,
+          rgb(0, 128, 128) 8.5%,
+          rgb(174, 206, 100) 118.2%
+        );
+      }
+      .box {
+        display: block;
+        margin: 50px 200px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: #fef9d9;
+        min-width: fit-content;
+      }
+      h1 {
+        text-align: center;
+        color: #5c8d89;
+        font-family: cursive;
+        font-size: 60px;
+
+        padding: 10px 5px;
+        margin: 5px;
+      }
+      h2 {
+        text-align: center;
+        color: #74b49b;
+      }
+      [data-component="slideshow"] .slide {
+        display: none;
+        margin-left: 100px;
+      }
+
+      [data-component="slideshow"] .slide.active {
+        display: block;
+      }
+      h3 {
+        float: right;
+        margin-right: 145px;
+        font-size: 14px;
+        font-family: cursive;
+      }
+
+      ul {
+        list-style: none;
+        float: right;
+        margin: 0 auto;
+      }
+      li {
+        display: grid;
+        font-family: cursive;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+      }
+      a :hover {
+        text-decoration: underline;
+        color: white;
+      }
+      .bio {
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid #74b49b;
+        background-color: #74b49b;
+        margin-top: 10px;
+        margin-right: 100px;
+        padding: 8px;
+      }
+      .attractions {
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid #74b49b;
+        background-color: #74b49b;
+        margin-top: 10px;
+        margin-right: 100px;
+        padding: 8px;
+      }
+      .communities {
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid #74b49b;
+        background-color: #74b49b;
+        margin-top: 10px;
+        margin-right: 100px;
+        padding: 8px;
+      }
+
+      .about {
+        font-family: cursive;
+        font-size: 17px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        line-height: 30px;
+      }
+
+      span {
+        color: black;
+        font-size: 13px;
+      }
+
+      .facts {
+        color: #4c9173;
+        display: block;
+        font-family: cursive;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .informations {
+        font-family: cursive;
+        margin-left: 10px;
+        font-size: 13px;
+      }
+      h5 {
+        font-size: 16px;
+        font-family: cursive;
+      }
+      button {
+        padding: 15px 25px 15px 25px;
+        font-size: 15px;
+        background-color: #4c9173;
+        margin: 0 auto;
+        display: block;
+        border-color: black;
+        border: 1px solid black;
+        border-radius: 25px;
+        box-shadow: 4px 4px 4px #cfcdd7;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #7ed87d;
+        color: black;
+        cursor: pointer;
+      }
+      .walking {
+        margin: 0 auto;
+        display: block;
+      }
+      .coder {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 12px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>National Park Piatra Craiului</h1>
+      <h2><em> A little heaven on Earth</em></h2>
+      <br />
+      <ul>
+        <h3>Find out more about</h3>
+        <br />
+        <br />
+        <br />
+        <li class="bio">
+          <a href="https://www.pcrai.ro/biodiversity" target="_blank"
+            ><span> Biodiversity</span>
+          </a>
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/007/147/original/capre-negre-in-piatra-craiului.jpg?1618424898"
+            width="200"
+            alt=""
+          />
+        </li>
+        <li class="attractions">
+          <a href="https://www.pcrai.ro/tourist-attractions" target="_blank">
+            <span>Touristic attractions</span></a
+          >
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/007/152/original/Trekking-tours-Romania.jpg?1618424949"
+            width="200"
+            alt=""
+          />
+        </li>
+        <li class="communities">
+          <a
+            href="https://www.pcrai.ro/communities-and-traditions"
+            target="_blank"
+          >
+            <span> Communities and traditions</span></a
+          >
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/007/156/original/craciun_trilulilu-ro.jpg?1618430066"
+            width="200"
+            alt=""
+          />
+        </li>
+      </ul>
+
+      <div id="slideshow-park" data-component="slideshow">
+        <div role="list">
+          <div class="slide">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/007/150/original/Evening_rays_over_Piatra_Craiului_Mountains.jpg?1618424925"
+              width="580"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/007/174/original/Refugiul_Ascutit_Carol_Lehman__Piatra_Craiului.jpg?1618471895"
+              width="520"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/007/148/original/ddkcuyh-23a023a5-740f-4c23-86b1-8e3f3353bb0c.jpg?1618424907"
+              width="530"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <p class="about">
+        With a spectacular 25 km limestone ridge, giving way to spruce forests
+        and glacial lakes, drama is everywhere in Craiului National Park.
+        Wolves, bears, deer, eagle owls and 17 species of bat are at home in
+        these woodlands and crags, first declared a nature reserve in 1938.
+        Bordered by glacial lakes, the ridge is regarded as one of the most
+        beautiful sights in the Carpathians. The two-day north–south ridge trail
+        is both challenging and rewarding. Starting at either Plaiul Foii in the
+        northwest or Curmatura in the northeast, hikers climb up to the ridge
+        along the narrow spine of the range. The descent at the southern end
+        leads into a karst landscape of deep gorges and pitted slopes where
+        water penetrating the rock has carved a series of caves.
+        <br />
+        The traditional villages of Magura, Pestera, Ciocanu, Sirnea, make for
+        interesting starting points for the routes on the eastern slope and for
+        getting in touch with the traditional Romanian way of life.
+      </p>
+
+      <hr />
+      <div class="informations">
+        <h5>Fast facts</h5>
+        <span class="facts"> Location: </span>
+        Southern Carpathians (Arges and Brasov counties)
+        <span class="facts"> Size: </span>
+        91,000 acres
+        <span class="facts"> Best known for: </span>
+        The most spectacular ridge in the Carpathian Mountains. The backdrop
+        scenes filmed here for the movie Cold Mountain.
+        <span class="facts"> Natural features: </span>
+        Caves, Meadows, Rocky steep walls, Spruce forests
+        <span class="facts"> Activities: </span>
+        Caving, Hiking, Horseback riding, Horse carriage / sled strolls, Rock
+        climbing, Wildlife and Bird watching
+      </div>
+      <br />
+
+      <button>Book a hiking tour 🥾</button>
+      <br />
+      <img
+        src="https://media1.giphy.com/media/7p0qZOxUe5cIM/giphy.gif"
+        alt=""
+        width="300"
+        class="walking"
+      />
+      <p class="coder">
+        This page was created by <strong>Raluca-Andreea Popescu ⛰️🐻</strong>
+      </p>
+    </div>
+    <script>
+      var slideshows = document.querySelectorAll(
+        '[data-component="slideshow"]'
+      );
+      slideshows.forEach(initSlideShow);
+
+      function initSlideShow(slideshow) {
+        var slides = document.querySelectorAll(
+          `#${slideshow.id} [role="list"] .slide`
+        );
+
+        var index = 0,
+          time = 5000;
+        slides[index].classList.add("active");
+
+        setInterval(() => {
+          slides[index].classList.remove("active");
+
+          index++;
+          if (index === slides.length) index = 0;
+
+          slides[index].classList.add("active");
+        }, time);
+      }
+      function bookTour() {
+        let name = prompt("What is your name?");
+        let persons = prompt("How many persons will join you?");
+        let email = prompt("What is your email address?");
+        if (persons <= 1) {
+          alert(
+            "Hi, " +
+              name +
+              " ! We will put you in contact with one of our tour guides by email. We wish you sunny trails! 🥾🌞"
+          );
+        } else {
+          alert(
+            "Hi, " +
+              name +
+              " ! Looking forward to meeting you and your friends/family . Our tour guide will soon contact you by email. We wish you sunny trails. 🥾🌞"
+          );
+        }
+      }
+      let bookButton = document.querySelector("button");
+      bookButton.addEventListener("click", bookTour);
+    </script>
+  </body>
+</html>
